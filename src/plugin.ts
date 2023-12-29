@@ -3,6 +3,7 @@ import type { Plugin } from 'esbuild';
 import type { ModuleIdOptions } from './types';
 
 export const moduleId = ({
+  onInitialize,
   onGenerate,
   generator = new DefaultModuleIdGenerator(),
   filter = /\.(?:[mc]js|[tj]sx?)$/,
@@ -12,6 +13,7 @@ export const moduleId = ({
   setup(build) {
     build.onStart(() => {
       generator.initialize();
+      onInitialize?.();
     });
 
     build.onResolve({ filter, namespace }, (args) => args.kind === 'entry-point' ? {

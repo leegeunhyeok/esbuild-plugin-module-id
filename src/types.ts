@@ -1,6 +1,7 @@
 import type { OnLoadArgs } from 'esbuild';
 
 export interface ModuleIdOptions {
+  onInitialize?: () => void;
   onGenerate: (ids: ModuleIds) => void;
   generator?: ModuleIdGenerator;
   filter?: RegExp;
