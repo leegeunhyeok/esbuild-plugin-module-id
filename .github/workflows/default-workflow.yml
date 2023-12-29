@@ -27,6 +27,6 @@ jobs:
         with:
           node-version: 18.x
 
-      - run: yarn --frozen-lockfile
+      - run: yarn --immutable
 
       - run: yarn test
