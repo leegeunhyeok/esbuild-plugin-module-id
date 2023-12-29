@@ -26,6 +26,6 @@ export const moduleId = ({
       return null;
     });
 
-    build.onEnd(() => onGenerate(generator.getIds()));
+    build.onEnd(() => onGenerate?.(generator.getIds()));
   },
 });
