@@ -4,9 +4,9 @@ import { ModuleIdGenerator, ModuleIds } from './types';
 
 export class DefaultModuleIdGenerator implements ModuleIdGenerator {
   // Entry point module id is always 0.
-  private static ENTRY_POINT_MODULE_ID = 0;
-  private INTERNAL_id = DefaultModuleIdGenerator.ENTRY_POINT_MODULE_ID + 1;
-  private INTERNAL_moduleIds: ModuleIds = {};
+  protected static ENTRY_POINT_MODULE_ID = 0;
+  protected INTERNAL_id = DefaultModuleIdGenerator.ENTRY_POINT_MODULE_ID + 1;
+  protected INTERNAL_moduleIds: ModuleIds = {};
 
   public initialize() {
     this.INTERNAL_id = DefaultModuleIdGenerator.ENTRY_POINT_MODULE_ID + 1;
