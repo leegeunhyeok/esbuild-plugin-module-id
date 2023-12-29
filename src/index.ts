@@ -1,1 +1,2 @@
-export const main = () => console.log('Hello, world!');
+export { moduleId } from './plugin';
+export * from './types';

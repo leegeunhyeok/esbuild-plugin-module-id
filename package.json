@@ -24,8 +24,7 @@
     "prepublishOnly": "rm -rf ./dist && yarn build",
     "lint": "oxlint",
     "test": "jest",
-    "demo": "node -r @swc-node/register demo/index.ts",
-    "build": "node -r @swc-node/register build/index.ts && tsc",
+    "build": "node -r @swc-node/register build/index.ts && tsc -p tsconfig.release.json",
     "release": "release-it"
   },
   "publishConfig": {
@@ -41,6 +40,7 @@
     }
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
     "@swc-node/register": "^1.6.8",
     "@swc/core": "^1.3.101",
     "@swc/jest": "^0.2.29",

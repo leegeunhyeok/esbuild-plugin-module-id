@@ -3,5 +3,5 @@ module.exports = {
   transform: {
     '^.+\\.(t|j)sx?$': '@swc/jest',
   },
-  testPathIgnorePatterns: ['dist'],
+  testPathIgnorePatterns: ['dist', 'mocks'],
 };
