@@ -1,5 +1,5 @@
 {
-  "name": "node-template-next",
+  "name": "esbuild-plugin-module-id",
   "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -17,7 +17,7 @@
     "dist/src/**/*.d.ts",
     "README.md"
   ],
-  "repository": "git@github.com:leegeunhyeok/node-template-next.git",
+  "repository": "git@github.com:leegeunhyeok/esbuild-plugin-module-id.git",
   "author": "leegeunhyeok <dev.ghlee@gmail.com>",
   "license": "MIT",
   "scripts": {
