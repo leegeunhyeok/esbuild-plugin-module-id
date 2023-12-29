@@ -9,6 +9,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
+    "allowImportingTsExtensions": true,
     "moduleResolution": "node",
     "types": ["node", "jest"],
     "outDir": "./dist",
