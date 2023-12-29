@@ -15,6 +15,7 @@ export const moduleId = ({
     });
 
     build.onResolve({ filter, namespace }, (args) => args.kind === 'entry-point' ? {
+      path: args.path,
       pluginData: { isEntryPoint: true },
     } : null);
 

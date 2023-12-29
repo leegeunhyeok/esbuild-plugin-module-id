@@ -13,7 +13,7 @@ export interface ModuleIdGenerator {
   getIds(): ModuleIds;
 }
 
-export type ModuleId = number;
 
 // { [path]: ModuleId }
 export type ModuleIds = Record<string, ModuleId>;
+export type ModuleId = number;
